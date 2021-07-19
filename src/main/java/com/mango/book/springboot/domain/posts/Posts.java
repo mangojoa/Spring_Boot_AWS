@@ -1,4 +1,4 @@
-package com.mango.book.springboot.springboot.domain.posts;
+package com.mango.book.springboot.domain.posts;
 
 import lombok.Builder;
 import lombok.Getter;

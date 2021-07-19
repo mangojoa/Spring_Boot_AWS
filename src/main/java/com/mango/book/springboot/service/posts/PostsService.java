@@ -1,4 +1,4 @@
-package com.mango.book.springboot.springboot.service.posts;
+package com.mango.book.springboot.service.posts;
 
 import com.mango.book.springboot.domain.posts.PostsRepository;
 import com.mango.book.springboot.web.DTO.PostsSaveRequestDto;

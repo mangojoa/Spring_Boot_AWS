@@ -1,4 +1,4 @@
-package com.mango.book.springboot.springboot;
+package com.mango.book.springboot;
 
 import com.mango.book.springboot.web.HelloController;
 import org.junit.Test;

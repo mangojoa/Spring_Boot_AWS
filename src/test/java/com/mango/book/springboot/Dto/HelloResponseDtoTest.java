@@ -1,7 +1,8 @@
-package com.mango.book.springboot.springboot.Dto;
+package com.mango.book.springboot.Dto;
 
 import com.mango.book.springboot.web.DTO.HelloResponseDto;
 import org.junit.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class HelloResponseDtoTest {
     @Test

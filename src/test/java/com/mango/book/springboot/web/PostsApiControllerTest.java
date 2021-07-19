@@ -1,4 +1,4 @@
-package com.mango.book.springboot.springboot.web;
+package com.mango.book.springboot.web;
 
 import com.mango.book.springboot.domain.posts.Posts;
 import com.mango.book.springboot.domain.posts.PostsRepository;

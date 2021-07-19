@@ -1,4 +1,4 @@
-package com.mango.book.springboot.springboot.web.DTO;
+package com.mango.book.springboot.web.DTO;
 
 import com.mango.book.springboot.domain.posts.Posts;
 import lombok.Builder;
