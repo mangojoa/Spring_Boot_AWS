@@ -1,7 +1,9 @@
 package com.mango.book.springboot.web;
 
 import com.mango.book.springboot.service.posts.PostsService;
+import com.mango.book.springboot.web.DTO.PostsResponseDto;
 import com.mango.book.springboot.web.DTO.PostsSaveRequestDto;
+import com.mango.book.springboot.web.DTO.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,12 +22,12 @@ public class PostsApiController {
     }
 
     @PostMapping("/api/v1/posts/{id}")
-    public Long update(@PathVariable Long id, @RequestBody PostsUpdataRequestDto requestDto){
+    public Long update(@PathVariable Long id, @RequestBody PostsUpdateRequestDto requestDto){
         return postsService.update(id, requestDto);
     }
 
     @PostMapping("/api/vi/posts/{id}")
     public PostsResponseDto findById(@PathVariable Long id){
-        return postsService.find
+        return postsService.findById(id);
     }
 }
