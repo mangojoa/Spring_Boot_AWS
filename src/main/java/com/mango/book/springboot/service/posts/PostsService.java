@@ -31,12 +31,21 @@ public class PostsService {
     @Transactional
     public Long update(Long id, PostsUpdateRequestDto requestDto){
         Posts posts = postsRepository.findById(id).orElseThrow(() -> new
-                IllegalArgumentException("해당 게시글이 없습니다. id=" + id));
-        posts.update()
+                IllegalArgumentException("해당 게시글이 없습니다. id = " + id));
+        posts.update(requestDto.getTitle(),requestDto.getContent());
+        /*
+         자세히 보면 DB에 쿼리를 날리는 부분이 없다.
+         이는 JPA의 영속성 컨텍스트 때문입니다.
+         영속성 컨텍스트 What ?? 엔티티를 영구저장하는 환경이다.
+         */
+
         return id;
     }
 
     public PostsResponseDto findById (Long id){
+        Posts entity = postsRepository.findById(id).orElseThrow(() -> new
+                IllegalArgumentException("해당 게시글이 없습니다. id = "+ id));
 
+        return new PostsResponseDto(entity);
     }
 }

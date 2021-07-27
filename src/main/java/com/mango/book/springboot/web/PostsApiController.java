@@ -26,7 +26,7 @@ public class PostsApiController {
         return postsService.update(id, requestDto);
     }
 
-    @PostMapping("/api/vi/posts/{id}")
+    @PostMapping("/api/vi/posts/")
     public PostsResponseDto findById(@PathVariable Long id){
         return postsService.findById(id);
     }
