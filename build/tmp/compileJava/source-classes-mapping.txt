@@ -1,0 +1,3 @@
+com/mango/book/springboot/domain/posts/Posts.java
+ com.mango.book.springboot.domain.posts.Posts
+ com.mango.book.springboot.domain.posts.Posts$PostsBuilder

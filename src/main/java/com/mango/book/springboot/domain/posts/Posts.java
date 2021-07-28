@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-
 @Getter
 @NoArgsConstructor // 기본 생성자 자동추가 pubilc Posts(){} 와 같은 기능
 @Entity // 테이블과 링크될 클래스를 나타낸다.
@@ -21,7 +20,7 @@ public class Posts {
     private String title;
 
     @Column(columnDefinition = "TEXT", nullable = false)
-    // 테이블의 컬럼을 나타내며 굳이 선언하지 않더라도 산관없다.
+    // 테이블의 컬럼을 나타내며 굳이 선언하지 않더라도 상관없다.
     // 사용한 이유는 기본값 외에 추가로 변경이 필요한 옵션이 있다면 사용한다.
     private String content;
 

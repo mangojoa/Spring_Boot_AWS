@@ -1,0 +1,8 @@
+com/mango/book/springboot/HelloControllerTest.java
+ com.mango.book.springboot.HelloControllerTest
+com/mango/book/springboot/domain/posts/PostsRepositoryTest.java
+ com.mango.book.springboot.domain.posts.PostsRepositoryTest
+com/mango/book/springboot/Dto/HelloResponseDtoTest.java
+ com.mango.book.springboot.Dto.HelloResponseDtoTest
+com/mango/book/springboot/web/PostsApiControllerTest.java
+ com.mango.book.springboot.web.PostsApiControllerTest

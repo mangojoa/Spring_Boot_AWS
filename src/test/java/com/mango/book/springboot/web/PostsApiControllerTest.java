@@ -68,7 +68,7 @@ public class PostsApiControllerTest {
     public void Posts_revise() throws Exception{
         // given
         Posts savedPosts = postsRepository.save(Posts.builder()
-                .title("title").content("content").author("author").build());
+        .title("title").content("content").author("author").build());
 
         Long updateId = savedPosts.getId();
         String expectedTitle = "title2";
@@ -77,7 +77,7 @@ public class PostsApiControllerTest {
         PostsUpdateRequestDto requestDto = PostsUpdateRequestDto.builder()
                 .title(expectedTitle).content(expectedContent).build();
 
-        String url ="http://localhost:"+port+"api/v1/posts"+updateId;
+        String url = "http://localhost:"+port+"/api/v1/posts/"+updateId;
 
         HttpEntity<PostsUpdateRequestDto> requestEntity = new HttpEntity<>(requestDto);
 
@@ -91,6 +91,5 @@ public class PostsApiControllerTest {
         List<Posts> all = postsRepository.findAll();
         assertThat(all.get(0).getTitle()).isEqualTo(expectedTitle);
         assertThat(all.get(0).getContent()).isEqualTo(expectedContent);
-
     }
 }
