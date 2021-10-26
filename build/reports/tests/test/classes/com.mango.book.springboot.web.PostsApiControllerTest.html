@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.296s</div>
+<div class="counter">0.281s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,13 @@
 </tr>
 </thead>
 <tr>
+<td class="success">Posts_enroll</td>
+<td class="success">0.265s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">Posts_revise</td>
-<td class="success">0.296s</td>
+<td class="success">0.016s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,32 +92,30 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>16:53:49.251 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.255 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-16:53:49.258 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-16:53:49.266 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.mango.book.springboot.web.PostsApiControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-16:53:49.271 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mango.book.springboot.web.PostsApiControllerTest], using SpringBootContextLoader
-16:53:49.272 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mango.book.springboot.web.PostsApiControllerTest]: class path resource [com/mango/book/springboot/web/PostsApiControllerTest-context.xml] does not exist
-16:53:49.273 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mango.book.springboot.web.PostsApiControllerTest]: class path resource [com/mango/book/springboot/web/PostsApiControllerTestContext.groovy] does not exist
-16:53:49.273 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.mango.book.springboot.web.PostsApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-16:53:49.273 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mango.book.springboot.web.PostsApiControllerTest]: PostsApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:53:49.291 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.330 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/mango_mac/IdeaProjects/Spring_Boot_AWS/build/classes/java/main/com/mango/book/springboot/Application.class]
-16:53:49.331 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mango.book.springboot.Application for test class com.mango.book.springboot.web.PostsApiControllerTest
-16:53:49.364 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.mango.book.springboot.web.PostsApiControllerTest]: using defaults.
-16:53:49.364 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-16:53:49.370 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c21d878, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@58971842, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4b47ecbb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3658e0a4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@74780c0f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@144d5fca, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@609b4bcc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@11b7cabb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@251bb4f6, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5bd60c90, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6129e90d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4ee41581]
-16:53:49.372 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.372 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.374 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.375 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.375 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.375 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.376 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@12f64d07 testClass = PostsApiControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1b477ecd testClass = PostsApiControllerTest, locations = '{}', classes = '{class com.mango.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1697ab5a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@798af945, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@a9deb24, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@50ca3eca], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
-16:53:49.376 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.376 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mango.book.springboot.web.PostsApiControllerTest]
-16:53:49.378 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@12f64d07 testClass = PostsApiControllerTest, testInstance = com.mango.book.springboot.web.PostsApiControllerTest@f505e2d, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1b477ecd testClass = PostsApiControllerTest, locations = '{}', classes = '{class com.mango.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1697ab5a, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@798af945, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@a9deb24, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@50ca3eca], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
-16:53:49.386 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+<pre>01:31:09.312 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.mango.book.springboot.web.PostsApiControllerTest]
+01:31:09.315 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+01:31:09.318 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+01:31:09.325 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.mango.book.springboot.web.PostsApiControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+01:31:09.328 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mango.book.springboot.web.PostsApiControllerTest], using SpringBootContextLoader
+01:31:09.329 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mango.book.springboot.web.PostsApiControllerTest]: class path resource [com/mango/book/springboot/web/PostsApiControllerTest-context.xml] does not exist
+01:31:09.329 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.mango.book.springboot.web.PostsApiControllerTest]: class path resource [com/mango/book/springboot/web/PostsApiControllerTestContext.groovy] does not exist
+01:31:09.330 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.mango.book.springboot.web.PostsApiControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+01:31:09.330 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.mango.book.springboot.web.PostsApiControllerTest]: PostsApiControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:31:09.344 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.mango.book.springboot.web.PostsApiControllerTest]
+01:31:09.385 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/mango_mac/IdeaProjects/Spring_Boot_AWS/build/classes/java/main/com/mango/book/springboot/Application.class]
+01:31:09.386 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.mango.book.springboot.Application for test class com.mango.book.springboot.web.PostsApiControllerTest
+01:31:09.417 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.mango.book.springboot.web.PostsApiControllerTest]: using defaults.
+01:31:09.418 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+01:31:09.423 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5ce83fe3, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@73265f2f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@280d2eb7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@62d46780, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7fde5b1e, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3e40aced, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7ff94504, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3ed0d51c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@335b7f73, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@8478a31, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3da32f58, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@56375c5]
+01:31:09.424 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mango.book.springboot.web.PostsApiControllerTest]
+01:31:09.424 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mango.book.springboot.web.PostsApiControllerTest]
+01:31:09.424 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mango.book.springboot.web.PostsApiControllerTest]
+01:31:09.424 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mango.book.springboot.web.PostsApiControllerTest]
+01:31:09.425 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@41cdaf6b testClass = PostsApiControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a0ae245 testClass = PostsApiControllerTest, locations = '{}', classes = '{class com.mango.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@17ce98e4, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@622ded43, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a74ca75, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7c9db877], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+01:31:09.425 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.mango.book.springboot.web.PostsApiControllerTest]
+01:31:09.425 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.mango.book.springboot.web.PostsApiControllerTest]
+01:31:09.427 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@41cdaf6b testClass = PostsApiControllerTest, testInstance = com.mango.book.springboot.web.PostsApiControllerTest@4f88b112, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7a0ae245 testClass = PostsApiControllerTest, locations = '{}', classes = '{class com.mango.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@17ce98e4, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@622ded43, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a74ca75, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7c9db877], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]]].
+01:31:09.434 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -122,42 +125,46 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.7.RELEASE)
 
-2021-09-20 16:53:49.720  INFO 1532 --- [    Test worker] c.m.b.s.web.PostsApiControllerTest       : Starting PostsApiControllerTest on idusan-ui-MacBookAir.local with PID 1532 (started by mango_mac in /Users/mango_mac/IdeaProjects/Spring_Boot_AWS)
-2021-09-20 16:53:49.723  INFO 1532 --- [    Test worker] c.m.b.s.web.PostsApiControllerTest       : No active profile set, falling back to default profiles: default
-2021-09-20 16:53:50.138  INFO 1532 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
-2021-09-20 16:53:50.172  INFO 1532 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 1 repository interfaces.
-2021-09-20 16:53:50.359  INFO 1532 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$af52cf0b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2021-09-20 16:53:50.542  INFO 1532 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2021-09-20 16:53:50.556  INFO 1532 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-09-20 16:53:50.556  INFO 1532 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
-2021-09-20 16:53:50.638  INFO 1532 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-09-20 16:53:50.638  INFO 1532 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 898 ms
-2021-09-20 16:53:50.749  INFO 1532 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-09-20 16:53:50.826  INFO 1532 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-09-20 16:53:50.866  INFO 1532 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+2021-10-27 01:31:09.545  INFO 1618 --- [    Test worker] c.m.b.s.web.PostsApiControllerTest       : Starting PostsApiControllerTest on idusan-ui-MacBookAir.local with PID 1618 (started by mango_mac in /Users/mango_mac/IdeaProjects/Spring_Boot_AWS)
+2021-10-27 01:31:09.546  INFO 1618 --- [    Test worker] c.m.b.s.web.PostsApiControllerTest       : No active profile set, falling back to default profiles: default
+2021-10-27 01:31:09.801  INFO 1618 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-10-27 01:31:09.837  INFO 1618 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32ms. Found 1 repository interfaces.
+2021-10-27 01:31:10.004  INFO 1618 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$813030da] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-10-27 01:31:10.169  INFO 1618 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-10-27 01:31:10.184  INFO 1618 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-27 01:31:10.184  INFO 1618 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2021-10-27 01:31:10.252  INFO 1618 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-27 01:31:10.252  INFO 1618 --- [    Test worker] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 697 ms
+2021-10-27 01:31:10.359  INFO 1618 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-27 01:31:10.421  INFO 1618 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-27 01:31:10.457  INFO 1618 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
 	name: default
 	...]
-2021-09-20 16:53:50.899  INFO 1532 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
-2021-09-20 16:53:50.901  INFO 1532 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
-2021-09-20 16:53:50.991  INFO 1532 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
-2021-09-20 16:53:51.053  INFO 1532 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-10-27 01:31:10.482  INFO 1618 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-10-27 01:31:10.483  INFO 1618 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-10-27 01:31:10.548  INFO 1618 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-10-27 01:31:10.600  INFO 1618 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
 Hibernate: drop table if exists posts
-Hibernate: create table posts (id bigint not null auto_increment, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id)) engine=InnoDB
-2021-09-20 16:53:51.335  INFO 1532 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@56a344a9'
-2021-09-20 16:53:51.337  INFO 1532 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-09-20 16:53:51.648  INFO 1532 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-09-20 16:53:51.671  WARN 1532 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-09-20 16:53:51.790  INFO 1532 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 50021 (http) with context path ''
-2021-09-20 16:53:51.793  INFO 1532 --- [    Test worker] c.m.b.s.web.PostsApiControllerTest       : Started PostsApiControllerTest in 2.405 seconds (JVM running for 2.857)
-Hibernate: insert into posts (author, content, title) values (?, ?, ?)
-2021-09-20 16:53:51.939  INFO 1532 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-09-20 16:53:51.939  INFO 1532 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-09-20 16:53:51.950  INFO 1532 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-Hibernate: select posts0_.id as id1_0_0_, posts0_.author as author2_0_0_, posts0_.content as content3_0_0_, posts0_.title as title4_0_0_ from posts posts0_ where posts0_.id=?
-Hibernate: update posts set author=?, content=?, title=? where id=?
-2021-09-20 16:53:52.040  INFO 1532 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
-Hibernate: select posts0_.id as id1_0_, posts0_.author as author2_0_, posts0_.content as content3_0_, posts0_.title as title4_0_ from posts posts0_
-Hibernate: select posts0_.id as id1_0_, posts0_.author as author2_0_, posts0_.content as content3_0_, posts0_.title as title4_0_ from posts posts0_
+Hibernate: create table posts (id bigint not null auto_increment, created_date datetime, modified_date datetime, author varchar(255), content TEXT not null, title varchar(500) not null, primary key (id)) engine=InnoDB
+2021-10-27 01:31:10.868  INFO 1618 --- [    Test worker] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4ae5bafc'
+2021-10-27 01:31:10.870  INFO 1618 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-27 01:31:11.130  INFO 1618 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-27 01:31:11.155  WARN 1618 --- [    Test worker] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-27 01:31:11.274  INFO 1618 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 50298 (http) with context path ''
+2021-10-27 01:31:11.276  INFO 1618 --- [    Test worker] c.m.b.s.web.PostsApiControllerTest       : Started PostsApiControllerTest in 1.841 seconds (JVM running for 2.272)
+2021-10-27 01:31:11.398  INFO 1618 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-27 01:31:11.399  INFO 1618 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-27 01:31:11.406  INFO 1618 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+2021-10-27 01:31:11.502  INFO 1618 --- [    Test worker] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+Hibernate: delete from posts where id=?
+Hibernate: insert into posts (created_date, modified_date, author, content, title) values (?, ?, ?, ?, ?)
+Hibernate: select posts0_.id as id1_0_0_, posts0_.created_date as created_2_0_0_, posts0_.modified_date as modified3_0_0_, posts0_.author as author4_0_0_, posts0_.content as content5_0_0_, posts0_.title as title6_0_0_ from posts posts0_ where posts0_.id=?
+Hibernate: update posts set created_date=?, modified_date=?, author=?, content=?, title=? where id=?
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
+Hibernate: select posts0_.id as id1_0_, posts0_.created_date as created_2_0_, posts0_.modified_date as modified3_0_, posts0_.author as author4_0_, posts0_.content as content5_0_, posts0_.title as title6_0_ from posts posts0_
 Hibernate: delete from posts where id=?
 </pre>
 </span>
@@ -170,7 +177,7 @@ Hibernate: delete from posts where id=?
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8</a> at 2021. 9. 20. 오후 4:53:52</p>
+<a href="http://www.gradle.org">Gradle 6.8</a> at 2021. 10. 27. 오전 1:31:12</p>
 </div>
 </div>
 </body>

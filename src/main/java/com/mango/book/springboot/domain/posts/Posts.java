@@ -9,7 +9,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor // 기본 생성자 자동추가 pubilc Posts(){} 와 같은 기능
 @Entity // 테이블과 링크될 클래스를 나타낸다.
-public class Posts extends BaseTimeEntity{
+public class Posts extends BaseTimeEntity{ // Posts class가 BaseTimeEntity를 상속받도록 변경한다.
 
     @Id // 해당 테이블의 PK
     @GeneratedValue(strategy = GenerationType.IDENTITY) // PK의 생성 규칙
